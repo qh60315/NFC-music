@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>请选择音乐App</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+        .btn {
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+            padding: 18px 0;
+            font-size: 22px;
+            font-weight: bold;
+            border: none;
+            border-radius: 60px;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #000;
+            transition: 0.2s;
+        }
+        .btn:active {
+            transform: scale(0.97);
+            background-color: #eee;
+        }
+        .qq { border-left: 8px solid #31c27c; }
+        .wy { border-left: 8px solid #cc2c2e; }
+        .yt { border-left: 8px solid #ff0000; }
+        h2 { margin-bottom: 30px; color: #333; }
+        .tip { margin-top: 40px; font-size: 14px; color: #888; }
+    </style>
+</head>
+<body>
+    <h2>🎵 选择你想用的音乐App</h2>
+    <a href="qqmusic://qq.com/media/playSonglist?p={\"song\":[{\"songmid\":\"000LhZDQ3q3MXC\"}],\"action\":\"play\"}" class="btn qq">🎧 QQ音乐</a>
+    <a href="orpheus://song/2149040158/?autoplay=1" class="btn wy">☁️ 网易云音乐</a>
+    <a href="https://youtu.be/_kbBYjpHKvw?si=QcIJ03XuAK5f0UiP" class="btn yt">📺 YouTube</a>
+    <div class="tip">点击按钮后会自动打开对应的App（需已安装）</div>
+</body>
+</html>
